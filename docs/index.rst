@@ -3,18 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to MEDAL Computing's documentation!
-===========================================
+A Guideline of MEDAL Computing
+==============================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Overview
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Research Projects
+
+   pages/research-projects/create_a_website_using_sphinx.md
 
 
+How to ask for help?
+--------------------
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+The `GitHub issue tracker <https://github.com/m-edal/computing/issues>`_ is the primary place for bug reports and suggestions/comments.
