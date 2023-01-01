@@ -12,16 +12,17 @@ A Guideline of MEDAL Computing
 
 .. toctree::
    :maxdepth: 2
-   :caption: computing-resources
+   :caption: Computing Resources
 
-   pages/computing-resources/overview.md
+   pages/computing_resources/overview.md
+   pages/computing_resources/csf_tips.md
 
 .. toctree::
    :maxdepth: 2
    :caption: Research Projects
 
-   pages/research-projects/create_a_website_using_sphinx.md
-   pages/research-projects/acknowledgement.md
+   pages/research_projects/create_a_website_using_sphinx.md
+   pages/research_projects/acknowledgement.md
 
 
 How to ask for help?
