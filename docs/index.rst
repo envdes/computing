@@ -16,6 +16,7 @@ A Guideline of MEDAL Computing
 
    pages/computing_resources/overview.md
    pages/computing_resources/csf_tips.md
+   pages/computing_resources/helpful_tips.md
 
 .. toctree::
    :maxdepth: 2
