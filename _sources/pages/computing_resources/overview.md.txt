@@ -8,7 +8,7 @@ Members of our lab have access to the following High Performance Computing (HPC)
 - [Bede](https://n8cir.org.uk/supporting-research/facilities/bede/) (the [N8 CIR](https://n8cir.org.uk/about/)’s new high performance computing platform)
 - [CSF](https://ri.itservices.manchester.ac.uk/csf3/) (Computational Shared Facility, the HPC cluster at The University of Manchester, [~8,644 cores + 100 GPUs](https://ri.itservices.manchester.ac.uk/csf3/overview/configuration/))
 
-We also have an in-house GPU workstation (NVIDIA® RTXTM A5000, 24 GB GDDR6)
+We also have an in-house GPU workstation (NVIDIA® RTXTM A5000, 24 GB GDDR6). If necessary, we'll appy for [PRACE – Partnership for Advanced Computing in Europe](https://prace-ri.eu/) via the [calls](https://prace-ri.eu/hpc-access/calls-for-proposals/). 
 
 ### Quickstart
 
