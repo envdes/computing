@@ -20,6 +20,12 @@ A Guideline of MEDAL Computing
 
 .. toctree::
    :maxdepth: 2
+   :caption: Programming Resources
+
+   pages/programming_resources/python.md
+
+.. toctree::
+   :maxdepth: 2
    :caption: Research Projects
 
    pages/research_projects/create_a_website_using_sphinx.md
