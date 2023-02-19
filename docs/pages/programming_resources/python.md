@@ -8,6 +8,7 @@
 
 - [codecademy](https://www.codecademy.com/catalog/language/python)
 - [Dataquest](https://www.dataquest.io/path/data-scientist/)
+- [DataCamp](https://www.datacamp.com/)
 
 **Coursera (with certificates)**
 
@@ -18,13 +19,12 @@
 - Videos A very short [16 mins] [Python tutorial](https://learn.microsoft.com/en-us/training/modules/intro-to-python/) by Microsoft
 - [Python for Beginners](https://aka.ms/LearnPython) [44 videos] by Microsoft 
 
-**Documents**
+**Tutorials for Specific Packages**
 
-- [numpy](https://numpy.org/devdocs/user/quickstart.html)
-- [pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html)
-- [xarray](https://tutorial.xarray.dev/intro.html)
-- [matplotlib](https://matplotlib.org/stable/tutorials/index.html)
-- PyTorch is a common machine learning library for creating neural networks, and can be GPU-accelerated
-  - https://pytorch.org/tutorials/
-- TensorFlow is a common another popular library with an application to neural networks
-  - https://www.tensorflow.org/tutorials/
+- [NumPy](https://numpy.org/devdocs/user/quickstart.html) is the fundamental package for scientific computing in Python.
+- [pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html) is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool.
+- [xarray](https://tutorial.xarray.dev/intro.html) makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun!
+- [matplotlib](https://matplotlib.org/stable/tutorials/index.html) is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+- [scikit-learn](https://scikit-learn.org/stable/tutorial/basic/tutorial.html) is a free software machine learning library for the Python programming language.
+- [PyTorch](https://pytorch.org/tutorials/) is a common machine learning library for creating neural networks, and can be GPU-accelerated.
+  - [TensorFlow](https://www.tensorflow.org/tutorials/) is another popular library with an application to neural networks
