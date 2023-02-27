@@ -115,11 +115,11 @@
 <h2>Log in<a class="headerlink" href="#log-in" title="Permalink to this heading"></a></h2>
 <p><strong>Windows Users</strong></p>
 <p>Use MobaXterm (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/getting-started/connecting/windows/">link</a>)</p>
-<p><strong>On-campus Access</strong></p>
+<p><strong>On-campus Access (Off-campus Access via the GlobalProtect VPN)</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>username@csf3.itservices.manchester.ac.uk
 </pre></div>
 </div>
-<p><strong>Off-campus Access via the GlobalProtect VPN</strong></p>
+<p><strong>Use CSF IP numbers directly (if the above hostname doesn’t work)</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>username@10.99.203.51
 <span class="c1"># OR</span>
 ssh<span class="w"> </span>username@10.99.203.52
@@ -127,12 +127,16 @@ ssh<span class="w"> </span>username@10.99.203.52
 </div>
 <p><strong>Access to External Websites and Repositories from the CSF</strong> (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/gateways-and-proxies/web-proxy/">link</a>)</p>
 <p>Before running git, set the following in your environment:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>export HTTP_PROXY=http://proxy.man.ac.uk:3128
-export HTTPS_PROXY=$HTTP_PROXY
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">HTTP_PROXY</span><span class="o">=</span>http://proxy.man.ac.uk:3128
+<span class="nb">export</span><span class="w"> </span><span class="nv">HTTPS_PROXY</span><span class="o">=</span><span class="nv">$HTTP_PROXY</span>
 </pre></div>
 </div>
 <p>You will then be able to clone from http(s) repositories. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">myproject</span><span class="o">.</span><span class="n">git</span> <span class="n">myproj</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/myproject.git<span class="w"> </span>myproj
+</pre></div>
+</div>
+<p><strong>Check your primary group (the first listed) plus any secondary groups</strong> (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/faqs/user-faq/">link</a>)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>groups
 </pre></div>
 </div>
 </section>
