@@ -24,6 +24,13 @@ A Guideline of MEDAL Computing
 
    pages/programming_resources/python.md
 
+
+:maxdepth: 1
+   :caption: Environments Setup
+
+   pages/environments_setup/conda_env.md
+   pages/environments_setup/python_jupyter.md
+
 .. toctree::
    :maxdepth: 2
    :caption: Research Projects
