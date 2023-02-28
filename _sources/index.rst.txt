@@ -24,8 +24,8 @@ A Guideline of MEDAL Computing
 
    pages/programming_resources/python.md
 
-
-:maxdepth: 1
+.. toctree::
+   :maxdepth: 1
    :caption: Environments Setup
 
    pages/environments_setup/conda_env.md
