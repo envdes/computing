@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python and Jupyter &mdash; MEDAL Computing v0.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            MEDAL Computing
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Computing Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/csf_tips.html">CSF Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/helpful_tips.html">Helpful Tips</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../programming_resources/python.html">Python</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/create_a_website_using_sphinx.html">Create a website using Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/acknowledgement.html">Acknowledging Use of the HPC</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MEDAL Computing</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Python and Jupyter</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/environments_setup/python_jupyter.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="python-and-jupyter">
+<h1>Python and Jupyter<a class="headerlink" href="#python-and-jupyter" title="Permalink to this heading"></a></h1>
+<p>Zhonghua Zheng, last update: 2023/02/28</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>Here we would use Jupyter notebook on HPC.</p>
+<p>You can find a different version for CSF3 <a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/software/applications/jupyter-notebook/">here</a></p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
+<p>Make sure you have a conda environment (”partmc”) available.</p>
+<p>If the “partmc” conda environment is not available, please follow the “<strong>Conda Installation</strong>”</p>
+</section>
+<section id="use-jupyter-notebook-on-hpc-with-a-gpu">
+<h2>use Jupyter notebook on HPC with a GPU<a class="headerlink" href="#use-jupyter-notebook-on-hpc-with-a-gpu" title="Permalink to this heading"></a></h2>
+<p><strong>step 1: run the following script</strong></p>
+<p>Please change the partition and gpu configuration accordingly</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>partmc
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ssh -N -L 8880:`hostname -i`:8880 </span><span class="nv">$USER</span><span class="s2">@csf3.itservices.manchester.ac.uk&quot;</span>
+jupyter<span class="w"> </span>notebook<span class="w"> </span>--port<span class="o">=</span><span class="m">8880</span><span class="w"> </span>--no-browser<span class="w"> </span>--ip<span class="o">=</span><span class="sb">`</span>hostname<span class="w"> </span>-i<span class="sb">`</span>
+</pre></div>
+</div>
+<p><strong>step 2: launch a new terminal, copy and paste the command printed by the “echo” command, and log in</strong></p>
+<p><strong>step 3: open your browse (e.g., Google Chrome), type <code class="docutils literal notranslate"><span class="pre">https://localhost:8880</span></code></strong></p>
+</section>
+<section id="trouble-shooting">
+<h2>Trouble Shooting<a class="headerlink" href="#trouble-shooting" title="Permalink to this heading"></a></h2>
+<p>GPU relevant command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>lspci<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>nvidia
+$<span class="w"> </span>nvidia-smi
+</pre></div>
+</div>
+<p>kill session:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ps<span class="w"> </span>-u<span class="w"> </span>your_netid<span class="w"> </span>-f<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ssh
+$<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span>session_id
+</pre></div>
+</div>
+<p>for nfs:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>lsof<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>nfs00000
+$<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span>session_id
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Zhonghua Zheng.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

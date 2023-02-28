@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conda Installation &mdash; MEDAL Computing v0.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            MEDAL Computing
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Computing Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/csf_tips.html">CSF Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/helpful_tips.html">Helpful Tips</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../programming_resources/python.html">Python</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/create_a_website_using_sphinx.html">Create a website using Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/acknowledgement.html">Acknowledging Use of the HPC</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MEDAL Computing</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Conda Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/environments_setup/conda_env.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="conda-installation">
+<h1>Conda Installation<a class="headerlink" href="#conda-installation" title="Permalink to this heading"></a></h1>
+<p>Zhonghua Zheng, last update: 2023/02/27</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>Here we would install Conda and create our first conda environment “partmc”</p>
+</section>
+<section id="submit-an-interactive-job">
+<h2>submit an interactive job<a class="headerlink" href="#submit-an-interactive-job" title="Permalink to this heading"></a></h2>
+<p>Here we use the compute node to intall the conda environment (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/">ref</a>)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>qrsh<span class="w"> </span>-l<span class="w"> </span>short
+</pre></div>
+</div>
+</section>
+<section id="download-and-activate-conda">
+<h2>download and activate conda<a class="headerlink" href="#download-and-activate-conda" title="Permalink to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download and install conda</span>
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+$<span class="w"> </span>wget<span class="w"> </span>https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh
+$<span class="w"> </span>./Miniconda3-latest-Linux-x86_64.sh
+
+<span class="c1">###### important ######</span>
+<span class="c1"># Edit .bash_profile or .bashrc, add &quot;:$HOME/miniconda3/bin&quot;</span>
+<span class="c1"># assume the original one is &quot;PATH=$PATH:$HOME/.local/bin:$HOME/bin&quot; </span>
+<span class="c1"># then we would have </span>
+<span class="c1"># &quot;PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/miniconda3/bin&quot; </span>
+<span class="c1">########################</span>
+
+<span class="c1"># Activate the conda system, depends on which one you edited </span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>.bash_profile
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>.bashrc
+</pre></div>
+</div>
+</section>
+<section id="create-and-activate-a-conda-environment">
+<h2>create and activate a conda environment<a class="headerlink" href="#create-and-activate-a-conda-environment" title="Permalink to this heading"></a></h2>
+<section id="option-1-install-the-environment-manually">
+<h3>option 1: install the environment manually<a class="headerlink" href="#option-1-install-the-environment-manually" title="Permalink to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># assume we want to create an environment named &quot;partmc&quot;, with Python version 3.8</span>
+
+<span class="c1"># we only need to create the environment once</span>
+$<span class="w"> </span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>partmc<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8
+
+<span class="c1"># activate this conda environment </span>
+<span class="c1"># we would do this everytime </span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>partmc
+
+<span class="c1"># assume we want to install some useful Python packages, e.g., numpy, pandas, scipy, scikit-learn, netcdf4, xarray, matplotlib, jupyterlab</span>
+$<span class="w"> </span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>numpy<span class="w"> </span>pandas<span class="w"> </span>scipy<span class="w"> </span>scikit-learn<span class="w"> </span>netcdf4<span class="w"> </span>xarray<span class="w"> </span>matplotlib<span class="w"> </span>jupyterlab
+<span class="c1"># assume we want to install something that is not available in conda-forge</span>
+<span class="c1"># Please update to the most recent version of xgboost. </span>
+$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">xgboost</span><span class="o">==</span><span class="m">1</span>.1.1
+</pre></div>
+</div>
+</section>
+<section id="option-2-install-the-environment-using-a-file">
+<h3>option 2: install the environment using a file<a class="headerlink" href="#option-2-install-the-environment-using-a-file" title="Permalink to this heading"></a></h3>
+<p>create a file, rename it to be “environment.yml”</p>
+<p>NOTE: Please update to the most recent version of xgboost.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">channels</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+<span class="o">-</span> <span class="n">defaults</span>
+
+<span class="n">dependencies</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.8.0</span>
+<span class="o">-</span> <span class="n">numpy</span>
+<span class="o">-</span> <span class="n">pandas</span>
+<span class="o">-</span> <span class="n">scipy</span>
+<span class="o">-</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span>
+<span class="o">-</span> <span class="n">netcdf4</span>
+<span class="o">-</span> <span class="n">xarray</span>
+<span class="o">-</span> <span class="n">matplotlib</span>
+<span class="o">-</span> <span class="n">jupyterlab</span>
+<span class="o">-</span> <span class="n">ipykernel</span>
+<span class="o">-</span> <span class="n">ipywidgets</span>
+<span class="o">-</span> <span class="n">pip</span>
+<span class="o">-</span> <span class="n">pip</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">xgboost</span><span class="o">==</span><span class="mf">1.1.1</span>
+<span class="n">name</span><span class="p">:</span> <span class="n">partmc</span>
+</pre></div>
+</div>
+<p>then run the commands</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create an environment &quot;partmc&quot; and install the necessary packages</span>
+$<span class="w"> </span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
+<span class="c1"># Activate the &quot;partmc&quot; environment</span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>partmc
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Zhonghua Zheng.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
