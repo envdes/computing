@@ -23,6 +23,7 @@ A Guideline of MEDAL Computing
    :caption: Programming Resources
 
    pages/programming_resources/python.md
+   pages/programming_resources/fortran.md
 
 .. toctree::
    :maxdepth: 1
