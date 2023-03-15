@@ -16,6 +16,14 @@ If the "partmc" conda environment is not available, please follow the "**Conda I
 
 ## use Jupyter notebook on HPC with a GPU
 
+**step 0: submit an interactive job**
+
+Here we use the compute node to intall the conda environment ([ref](https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/))
+
+```bash
+$ qrsh -l short
+```
+
 **step 1: run the following script**
 
 Please change the partition and gpu configuration accordingly
@@ -52,4 +60,3 @@ for nfs:
 $ lsof | grep nfs00000
 $ kill -9 session_id
 ```
-
