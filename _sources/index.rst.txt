@@ -31,6 +31,7 @@ A Guideline of MEDAL Computing
 
    pages/environments_setup/conda_env.md
    pages/environments_setup/python_jupyter.md
+   pages/environments_setup/partmc_mosaic_installation.md
 
 .. toctree::
    :maxdepth: 2

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartMC-MOSAIC Installation &mdash; MEDAL Computing v0.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Create a website using Sphinx" href="../research_projects/create_a_website_using_sphinx.html" />
+    <link rel="prev" title="Python and Jupyter" href="python_jupyter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            MEDAL Computing
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Computing Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/csf_tips.html">CSF Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/helpful_tips.html">Helpful Tips</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../programming_resources/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming_resources/fortran.html">Fortran</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Environments Setup</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="conda_env.html">Conda Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_jupyter.html">Python and Jupyter</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PartMC-MOSAIC Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#build-mosaic-chemistry"><strong>build MOSAIC chemistry</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-and-test-partmc-mosaic">build and test PartMC-MOSAIC</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/create_a_website_using_sphinx.html">Create a website using Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/acknowledgement.html">Acknowledging Use of the HPC</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MEDAL Computing</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PartMC-MOSAIC Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/environments_setup/partmc_mosaic_installation.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="partmc-mosaic-installation">
+<h1>PartMC-MOSAIC Installation<a class="headerlink" href="#partmc-mosaic-installation" title="Permalink to this heading"></a></h1>
+<p>Last update: 2023/03/22</p>
+<section id="build-mosaic-chemistry">
+<h2><strong>build MOSAIC chemistry</strong><a class="headerlink" href="#build-mosaic-chemistry" title="Permalink to this heading"></a></h2>
+<p>MOSAIC is not publicaly, you’ll first get the <code class="docutils literal notranslate"><span class="pre">mosaic.zip</span></code> from Dr. Zhonghua Zheng</p>
+<p>step 1: unzip <code class="docutils literal notranslate"><span class="pre">mosaic.zip</span></code> and upload <code class="docutils literal notranslate"><span class="pre">mosaic</span></code> folder to your path</p>
+<p>step 2: run the following commands</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>module<span class="w"> </span>load<span class="w"> </span>tools/env/proxy
+$<span class="w"> </span>module<span class="w"> </span>load<span class="w"> </span>libs/gcc/netcdf/4.6.2<span class="w"> </span>tools/gcc/cmake/3.23.0
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/your_mosaic_path
+$<span class="w"> </span>cp<span class="w"> </span>Makefile.local.gfortran<span class="w"> </span>Makefile.local
+$<span class="w"> </span>make
+</pre></div>
+</div>
+</section>
+<section id="build-and-test-partmc-mosaic">
+<h2>build and test PartMC-MOSAIC<a class="headerlink" href="#build-and-test-partmc-mosaic" title="Permalink to this heading"></a></h2>
+<p>please type <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to record /your_mosaic_path</p>
+<p>step 1: run the following commands</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>module<span class="w"> </span>load<span class="w"> </span>tools/env/proxy
+$<span class="w"> </span>module<span class="w"> </span>load<span class="w"> </span>libs/gcc/netcdf/4.6.2<span class="w"> </span>tools/gcc/cmake/3.23.0
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>your_path
+$<span class="w"> </span>mkdir<span class="w"> </span>partmc
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>partmc
+$<span class="w"> </span>wget<span class="w"> </span>https://github.com/compdyn/partmc/releases/download/2.6.1/partmc-2.6.1.tar.gz
+$<span class="w"> </span>tar<span class="w"> </span>zxvf<span class="w"> </span>partmc-2.6.1.tar.gz
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>partmc-2.6.1
+$<span class="w"> </span>mkdir<span class="w"> </span>build
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+<span class="c1"># Note: when export MOSAIC_HOME, there are no quotation marks. And you MUST include &quot;/&quot; in the end of your_mosaic_path</span>
+$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">MOSAIC_HOME</span><span class="o">=</span>/your_mosaic_path/<span class="w"> </span>
+$<span class="w"> </span>ccmake<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>/opt/apps/apps/gcc/partmc/partmc-2.6.1<span class="w"> </span>..
+</pre></div>
+</div>
+<p>step 2:</p>
+<ul class="simple">
+<li><p>you’ll see “EMPTY CACHE”, press “c”</p></li>
+<li><p>press “e”</p></li>
+<li><p>modify the following options:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CMAKE_BUILD_TYPE</span><span class="p">:</span> <span class="n">RELEASE</span>
+<span class="n">ENABLE_MOSAIC</span><span class="p">:</span> <span class="n">ON</span> 
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>press “c”</p></li>
+<li><p>press “e”</p></li>
+<li><p>press “c”</p></li>
+<li><p>press “e”</p></li>
+<li><p>press “g”</p></li>
+</ul>
+<p>step 3: compile and make sure you have all the test cases such as “test_mosaic” passed.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make
+make<span class="w"> </span><span class="nb">test</span>
+</pre></div>
+</div>
+<p>Now you are all set!</p>
+<p>Contributors:</p>
+<ul class="simple">
+<li><p>Constantinos Katsamis (for PartMC)</p></li>
+<li><p>Zhonghua Zheng (for PartMC-MOSAIC)</p></li>
+<li><p>Jeffrey Curtis</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="python_jupyter.html" class="btn btn-neutral float-left" title="Python and Jupyter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../research_projects/create_a_website_using_sphinx.html" class="btn btn-neutral float-right" title="Create a website using Sphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Zhonghua Zheng.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
