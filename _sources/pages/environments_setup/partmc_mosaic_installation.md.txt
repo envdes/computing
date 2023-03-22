@@ -5,7 +5,7 @@ Last update: 2023/03/22
 
 ## **build MOSAIC chemistry** 
 
-MOSAIC is not publicaly, you'll first get the `mosaic.zip` from Dr. Zhonghua Zheng
+MOSAIC is not publicaly available, you'll first get the `mosaic.zip` from Dr. Zhonghua Zheng
 
 step 1: unzip `mosaic.zip` and upload `mosaic` folder to your path
 
