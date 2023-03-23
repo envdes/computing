@@ -19,6 +19,10 @@
 - Videos A very short [16 mins] [Python tutorial](https://learn.microsoft.com/en-us/training/modules/intro-to-python/) by Microsoft
 - [Python for Beginners](https://aka.ms/LearnPython) [44 videos] by Microsoft 
 
+**Others**
+
+- Software carpentry - [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/) (7.5 hrs)
+
 **Tutorials for Specific Packages**
 
 - [NumPy](https://numpy.org/devdocs/user/quickstart.html) is the fundamental package for scientific computing in Python.
