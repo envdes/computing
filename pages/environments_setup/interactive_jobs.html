@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Jobs on Bede &mdash; MEDAL Computing v0.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Conda Installation" href="conda_env.html" />
+    <link rel="prev" title="Fortran" href="../programming_resources/fortran.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            MEDAL Computing
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Computing Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/csf_tips.html">CSF Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/helpful_tips.html">Helpful Tips</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../programming_resources/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming_resources/fortran.html">Fortran</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Environments Setup</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interactive Jobs on Bede</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next">Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reference">Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conda_env.html">Conda Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_jupyter.html">Python and Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partmc_mosaic_installation.html">PartMC-MOSAIC Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/create_a_website_using_sphinx.html">Create a website using Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../research_projects/acknowledgement.html">Acknowledging Use of the HPC</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MEDAL Computing</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Interactive Jobs on Bede</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/environments_setup/interactive_jobs.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="interactive-jobs-on-bede">
+<h1>Interactive Jobs on Bede<a class="headerlink" href="#interactive-jobs-on-bede" title="Permalink to this heading"></a></h1>
+<p>Zhonghua Zheng, last update: 2023/04/13</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>Currently <a class="reference external" href="https://bede-documentation.readthedocs.io/en/latest/index.html">Bede</a> documentation doens’t provide the instruction for interactive jobs (e.g. Jupyter Notebook).</p>
+<p>Here we would request resources for interactive jobs on <a class="reference external" href="https://bede-documentation.readthedocs.io/en/latest/index.html">Bede</a>.</p>
+<p>Step 1: Follow the guideline <a class="reference external" href="https://bede-documentation.readthedocs.io/en/latest/usage/index.html#requesting-resources">here</a> (e.g., partition, time, etc.) and run the command <code class="docutils literal notranslate"><span class="pre">salloc</span></code> to request allocation</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>salloc<span class="w"> </span>--nodes<span class="o">=</span><span class="m">1</span><span class="w"> </span>--account<span class="o">=</span>&lt;project&gt;<span class="w"> </span>--partition<span class="o">=</span>&lt;partition&gt;<span class="w"> </span>--time<span class="o">=</span><span class="m">00</span>:30:00
+</pre></div>
+</div>
+<p>And you can check the hostname of the GPU by typing</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ srun hostname
+</pre></div>
+</div>
+<p>You can also check the hostname of the login node by typing</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>hostname
+</pre></div>
+</div>
+<p>Step 2: Then you can establish the interactive session by using</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ srun --pty bash 
+</pre></div>
+</div>
+</section>
+<section id="next">
+<h2>Next<a class="headerlink" href="#next" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p>Please follow <a class="reference internal" href="conda_env.html"><span class="doc">HERE</span></a> to install conda, note the difference is we should use <code class="docutils literal notranslate"><span class="pre">ppc64le</span></code> (by typing <code class="docutils literal notranslate"><span class="pre">arch</span></code> instead of <code class="docutils literal notranslate"><span class="pre">x86_64</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>wget<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh
+$<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>Miniconda3-latest-Linux-ppc64le.sh
+$<span class="w"> </span>./Miniconda3-latest-Linux-ppc64le.sh
+</pre></div>
+</div>
+<p>The instruction of conda installation is available <a class="reference external" href="https://bede-documentation.readthedocs.io/en/latest/software/applications/conda.html">HERE</a></p>
+</li>
+<li><p>When run the jupyter notebook on Bede</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ssh -N -L 8880:`hostname -i`:8880 </span><span class="nv">$USER</span><span class="s2">@login1.bede.dur.ac.uk&quot;</span>
+$<span class="w"> </span>jupyter<span class="w"> </span>notebook<span class="w"> </span>--port<span class="o">=</span><span class="m">8880</span><span class="w"> </span>--no-browser<span class="w"> </span>--ip<span class="o">=</span><span class="sb">`</span>hostname<span class="w"> </span>-i<span class="sb">`</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://hpc-unibe-ch.github.io/slurm/interactive-jobs.html">High Performance Computing (HPC) documentation of the University of Bern</a></p></li>
+<li><p><a class="reference external" href="https://docs.lumi-supercomputer.eu/runjobs/scheduled-jobs/interactive/">LUMI supercomper user guide</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../programming_resources/fortran.html" class="btn btn-neutral float-left" title="Fortran" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="conda_env.html" class="btn btn-neutral float-right" title="Conda Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Zhonghua Zheng.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
