@@ -34,7 +34,7 @@ $ srun --pty bash
 
 ## Next
 
-- Please follow [HERE](./conda_env.md) to install conda, note the difference is we should use `ppc64le` (by typing `arch` instead of `x86_64`
+- Please follow [HERE](./conda_env.md) to install conda, note the difference is we should use `ppc64le` (by typing `arch`) instead of `x86_64`
 
   ```bash
   $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh
