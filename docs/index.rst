@@ -29,6 +29,7 @@ A Guideline of MEDAL Computing
    :maxdepth: 1
    :caption: Environments Setup
 
+   pages/environments_setup/interactive_jobs.md
    pages/environments_setup/conda_env.md
    pages/environments_setup/python_jupyter.md
    pages/environments_setup/partmc_mosaic_installation.md
