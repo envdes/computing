@@ -27,6 +27,7 @@
 
 - [NumPy](https://numpy.org/devdocs/user/quickstart.html) is the fundamental package for scientific computing in Python.
 - [pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html) is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool.
+  - [100 Pandas Puzzles](https://github.com/ajcr/100-pandas-puzzles)
 - [xarray](https://tutorial.xarray.dev/intro.html) makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun!
 - [matplotlib](https://matplotlib.org/stable/tutorials/index.html) is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 - [scikit-learn](https://scikit-learn.org/stable/tutorial/basic/tutorial.html) is a free software machine learning library for the Python programming language.
