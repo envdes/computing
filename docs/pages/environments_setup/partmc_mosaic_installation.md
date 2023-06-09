@@ -65,9 +65,16 @@ make
 make test
 ```
 
-
-
 Now you are all set!
+
+## Running PartMC and PartMC-MOSAIC
+
+```bash
+# PartMC only
+$ module load apps/gcc/partmc/2.6.1
+# PartMC-MOSAIC
+$ module load apps/gcc/partmc-mosaic/22.0
+```
 
 
 
