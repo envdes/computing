@@ -11,6 +11,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
@@ -60,6 +62,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">PartMC-MOSAIC Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#build-mosaic-chemistry"><strong>build MOSAIC chemistry</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#build-and-test-partmc-mosaic">build and test PartMC-MOSAIC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-partmc-and-partmc-mosaic">Running PartMC and PartMC-MOSAIC</a></li>
 </ul>
 </li>
 </ul>
@@ -151,6 +154,15 @@ make<span class="w"> </span><span class="nb">test</span>
 </pre></div>
 </div>
 <p>Now you are all set!</p>
+</section>
+<section id="running-partmc-and-partmc-mosaic">
+<h2>Running PartMC and PartMC-MOSAIC<a class="headerlink" href="#running-partmc-and-partmc-mosaic" title="Permalink to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># PartMC only</span>
+$<span class="w"> </span>module<span class="w"> </span>load<span class="w"> </span>apps/gcc/partmc/2.6.1
+<span class="c1"># PartMC-MOSAIC</span>
+$<span class="w"> </span>module<span class="w"> </span>load<span class="w"> </span>apps/gcc/partmc-mosaic/22.0
+</pre></div>
+</div>
 <p>Contributors:</p>
 <ul class="simple">
 <li><p>Constantinos Katsamis (for PartMC)</p></li>
