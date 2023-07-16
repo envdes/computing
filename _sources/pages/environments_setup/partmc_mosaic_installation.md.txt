@@ -96,9 +96,7 @@ Training course and loading the training exercise
 - https://ri.itservices.manchester.ac.uk/course/rcsf/
 - `$module load training/RCSF`
 
-
-
-Contributors: 
+## Contributors
 
 - Constantinos Katsamis (for PartMC and PartMC-MOSAIC) 
 - Zhonghua Zheng (for PartMC and PartMC-MOSAIC)
