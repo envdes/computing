@@ -1,7 +1,7 @@
 PartMC-MOSAIC Installation
 ======
 
-Last update: 2023/03/22
+Last update: 2023/07/16
 
 ## **build MOSAIC chemistry** 
 
@@ -76,10 +76,30 @@ $ module load apps/gcc/partmc/2.6.1
 $ module load apps/gcc/partmc-mosaic/22.0
 ```
 
+## More Information about PartMC and PartMC-MOSAIC on CSF3
+
+PartMC-MOSAIC related
+
+- https://ri.itservices.manchester.ac.uk/csf3/software/applications/partmc/
+- https://ri.itservices.manchester.ac.uk/csf3/software/applications/partmc/partmc-mosaic/
+
+Job-arrays
+
+- https://ri.itservices.manchester.ac.uk/csf3/batch/job-arrays/
+
+Job dependencies
+
+- https://ri.itservices.manchester.ac.uk/csf3/batch/job-dependencies/
+
+Training course and loading the training exercise
+
+- https://ri.itservices.manchester.ac.uk/course/rcsf/
+- `$module load training/RCSF`
+
 
 
 Contributors: 
 
-- Constantinos Katsamis (for PartMC) 
-- Zhonghua Zheng (for PartMC-MOSAIC)
+- Constantinos Katsamis (for PartMC and PartMC-MOSAIC) 
+- Zhonghua Zheng (for PartMC and PartMC-MOSAIC)
 - Jeffrey Curtis 
