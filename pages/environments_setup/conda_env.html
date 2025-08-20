@@ -112,7 +112,7 @@
 <section id="submit-an-interactive-job">
 <h2>submit an interactive job<a class="headerlink" href="#submit-an-interactive-job" title="Permalink to this heading"></a></h2>
 <p>Here we use the compute node to intall the conda environment (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/">ref</a>)</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>qrsh<span class="w"> </span>-l<span class="w"> </span>short
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>srun<span class="w"> </span>-p<span class="w"> </span>interactive<span class="w"> </span>-n<span class="w"> </span><span class="m">4</span><span class="w"> </span>-t<span class="w"> </span><span class="m">0</span>-1<span class="w"> </span>--pty<span class="w"> </span>bash
 </pre></div>
 </div>
 </section>

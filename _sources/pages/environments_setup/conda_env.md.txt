@@ -11,7 +11,7 @@ Here we would install Conda and create our first conda environment "partmc"
 Here we use the compute node to intall the conda environment ([ref](https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/))
 
 ```bash
-$ qrsh -l short
+$ srun -p interactive -n 4 -t 0-1 --pty bash
 ```
 
 ## download and activate conda
