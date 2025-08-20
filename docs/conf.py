@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'MEDAL Computing'
+project = 'ENVDES Computing'
 copyright = '2022, Zhonghua Zheng'
 author = 'Zhonghua Zheng'
 
