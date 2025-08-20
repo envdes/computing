@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -13,9 +13,9 @@
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=f3b75425"></script>
-      <script src="../../_static/doctools.js?v=888ff710"></script>
-      <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../../_static/documentation_options.js?v=8b92e751"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -103,21 +103,21 @@
            <div itemprop="articleBody">
              
   <section id="conda-installation">
-<h1>Conda Installation<a class="headerlink" href="#conda-installation" title="Permalink to this heading"></a></h1>
+<h1>Conda Installation<a class="headerlink" href="#conda-installation" title="Link to this heading"></a></h1>
 <p>Zhonghua Zheng, last update: 2023/02/27</p>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
 <p>Here we would install Conda and create our first conda environment “partmc”</p>
 </section>
 <section id="submit-an-interactive-job">
-<h2>submit an interactive job<a class="headerlink" href="#submit-an-interactive-job" title="Permalink to this heading"></a></h2>
+<h2>submit an interactive job<a class="headerlink" href="#submit-an-interactive-job" title="Link to this heading"></a></h2>
 <p>Here we use the compute node to intall the conda environment (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/">ref</a>)</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>srun<span class="w"> </span>-p<span class="w"> </span>interactive<span class="w"> </span>-n<span class="w"> </span><span class="m">4</span><span class="w"> </span>-t<span class="w"> </span><span class="m">0</span>-1<span class="w"> </span>--pty<span class="w"> </span>bash
 </pre></div>
 </div>
 </section>
 <section id="download-and-activate-conda">
-<h2>download and activate conda<a class="headerlink" href="#download-and-activate-conda" title="Permalink to this heading"></a></h2>
+<h2>download and activate conda<a class="headerlink" href="#download-and-activate-conda" title="Link to this heading"></a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download and install conda</span>
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
 $<span class="w"> </span>wget<span class="w"> </span>https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -138,9 +138,9 @@ $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>.
 </div>
 </section>
 <section id="create-and-activate-a-conda-environment">
-<h2>create and activate a conda environment<a class="headerlink" href="#create-and-activate-a-conda-environment" title="Permalink to this heading"></a></h2>
+<h2>create and activate a conda environment<a class="headerlink" href="#create-and-activate-a-conda-environment" title="Link to this heading"></a></h2>
 <section id="option-1-install-the-environment-manually">
-<h3>option 1: install the environment manually<a class="headerlink" href="#option-1-install-the-environment-manually" title="Permalink to this heading"></a></h3>
+<h3>option 1: install the environment manually<a class="headerlink" href="#option-1-install-the-environment-manually" title="Link to this heading"></a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># assume we want to create an environment named &quot;partmc&quot;, with Python version 3.8</span>
 
 <span class="c1"># we only need to create the environment once</span>
@@ -159,7 +159,7 @@ $<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </sp
 </div>
 </section>
 <section id="option-2-install-the-environment-using-a-file">
-<h3>option 2: install the environment using a file<a class="headerlink" href="#option-2-install-the-environment-using-a-file" title="Permalink to this heading"></a></h3>
+<h3>option 2: install the environment using a file<a class="headerlink" href="#option-2-install-the-environment-using-a-file" title="Link to this heading"></a></h3>
 <p>create a file, rename it to be “environment.yml”</p>
 <p>NOTE: Please update to the most recent version of xgboost.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">channels</span><span class="p">:</span>

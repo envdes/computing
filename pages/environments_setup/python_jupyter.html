@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -13,9 +13,9 @@
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=f3b75425"></script>
-      <script src="../../_static/doctools.js?v=888ff710"></script>
-      <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../../_static/documentation_options.js?v=8b92e751"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -99,20 +99,20 @@
            <div itemprop="articleBody">
              
   <section id="python-and-jupyter">
-<h1>Python and Jupyter<a class="headerlink" href="#python-and-jupyter" title="Permalink to this heading"></a></h1>
+<h1>Python and Jupyter<a class="headerlink" href="#python-and-jupyter" title="Link to this heading"></a></h1>
 <p>Zhonghua Zheng, last update: 2023/02/28</p>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
 <p>Here we would use Jupyter notebook on HPC.</p>
 <p>You can find a different version for CSF3 <a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/software/applications/jupyter-notebook/">here</a></p>
 </section>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
 <p>Make sure you have a conda environment (”partmc”) available.</p>
 <p>If the “partmc” conda environment is not available, please follow the “<strong>Conda Installation</strong>”</p>
 </section>
 <section id="use-jupyter-notebook-on-hpc-with-a-gpu">
-<h2>use Jupyter notebook on HPC with a GPU<a class="headerlink" href="#use-jupyter-notebook-on-hpc-with-a-gpu" title="Permalink to this heading"></a></h2>
+<h2>use Jupyter notebook on HPC with a GPU<a class="headerlink" href="#use-jupyter-notebook-on-hpc-with-a-gpu" title="Link to this heading"></a></h2>
 <p><strong>step 0: submit an interactive job</strong></p>
 <p>Here we use the compute node to intall the conda environment (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/">ref</a>)</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>qrsh<span class="w"> </span>-l<span class="w"> </span>short
@@ -130,7 +130,7 @@ jupyter<span class="w"> </span>notebook<span class="w"> </span>--port<span class
 <p><strong>step 3: open your browse (e.g., Google Chrome), type <code class="docutils literal notranslate"><span class="pre">https://localhost:8880</span></code></strong></p>
 </section>
 <section id="trouble-shooting">
-<h2>Trouble Shooting<a class="headerlink" href="#trouble-shooting" title="Permalink to this heading"></a></h2>
+<h2>Trouble Shooting<a class="headerlink" href="#trouble-shooting" title="Link to this heading"></a></h2>
 <p>GPU relevant command</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>lspci<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>nvidia
 $<span class="w"> </span>nvidia-smi
