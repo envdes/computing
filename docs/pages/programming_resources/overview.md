@@ -17,7 +17,7 @@ Last update: 2025/08/20 by Zhonghua Zheng
 
 **3. Markdown**
 
-- [Tutorial](https://www.markdowntutorial.com/)
+- [Markdown Tutorial](https://www.markdowntutorial.com/)
 - [For more information](https://zhonghuazheng.com/Environmental-Data-Science-Book/writing/wts/markdown-introduction.html)
 
 **4. LaTeX**
