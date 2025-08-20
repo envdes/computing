@@ -16,7 +16,6 @@
 
 **Videos (without certificates)**
 
-- Videos A very short [16 mins] [Python tutorial](https://learn.microsoft.com/en-us/training/modules/intro-to-python/) by Microsoft
 - [Python for Beginners](https://aka.ms/LearnPython) [44 videos] by Microsoft 
 
 **Others**

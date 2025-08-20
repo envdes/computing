@@ -20,8 +20,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="CSF Tips" href="csf_tips.html" />
-    <link rel="prev" title="A Guideline of ENVDES Computing" href="../../index.html" /> 
+    <link rel="next" title="Python" href="python.html" />
+    <link rel="prev" title="Helpful Tips" href="../computing_resources/helpful_tips.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,20 +44,19 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Computing Resources</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#computing-resources">Computing Resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#quickstart">Quickstart</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="csf_tips.html">CSF Tips</a></li>
-<li class="toctree-l1"><a class="reference internal" href="helpful_tips.html">Helpful Tips</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/csf_tips.html">CSF Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computing_resources/helpful_tips.html">Helpful Tips</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../programming_resources/overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programming_resources/python.html">Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programming_resources/fortran.html">Fortran</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preboarding-list">Preboarding List</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fortran.html">Fortran</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Environments Setup</span></p>
 <ul>
@@ -88,7 +87,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Overview</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/pages/computing_resources/overview.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/pages/programming_resources/overview.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -98,34 +97,31 @@
              
   <section id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h1>
-<section id="computing-resources">
-<h2>Computing Resources<a class="headerlink" href="#computing-resources" title="Permalink to this heading"></a></h2>
-<p>Members of our lab have access to the following High Performance Computing (HPC) resources:</p>
+<p>Last update: 2025/08/20 by Zhonghua Zheng</p>
+<section id="preboarding-list">
+<h2>Preboarding List<a class="headerlink" href="#preboarding-list" title="Permalink to this heading"></a></h2>
+<p><strong>Please follow the order listed below.</strong></p>
+<p><strong>1. Linux</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/">CSF &#64;Manchester</a> (Computational Shared Facility, the HPC cluster at The University of Manchester, <a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/overview/configuration/">~8,644 cores + 100 GPUs</a>)</p></li>
-<li><p><a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/hpc-pool/">HPC Pool &#64;Manchester</a> (4096 cores in total, job sizes must be 128–1024 cores)</p></li>
-<li><p><a class="reference external" href="https://ri.itservices.manchester.ac.uk/htccondor/">HTCondor &#64;Manchester</a> (designed for <em>high throughput computing</em>,  <a class="reference external" href="https://aws.amazon.com/hpc">virtually unlimited</a> number of CPU cores available in the AWS cloud)</p></li>
-<li><p><a class="reference external" href="https://www.archer2.ac.uk/">ARCHER2</a> (a world class advanced computing resource for UK researchers)</p></li>
-<li><p><a class="reference external" href="https://n8cir.org.uk/supporting-research/facilities/bede/">Bede</a> (the <a class="reference external" href="https://n8cir.org.uk/about/">N8 CIR</a>’s new high performance computing platform)</p></li>
+<li><p>https://linux.vbird.org/ (more up-to-date, but in Tradionnal Chinese) or http://cn.linux.vbird.org/linux_basic/linux_basic.php (Simplified Chinese)</p></li>
 </ul>
-<p>We also have an in-house GPU workstation (NVIDIA® RTXTM A5000, 24 GB GDDR6). If necessary, we’ll appy for <a class="reference external" href="https://prace-ri.eu/">PRACE – Partnership for Advanced Computing in Europe</a> via the <a class="reference external" href="https://prace-ri.eu/hpc-access/calls-for-proposals/">calls</a>.</p>
-</section>
-<section id="quickstart">
-<h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading"></a></h2>
+<p><strong>2. GitHub</strong></p>
 <ul class="simple">
-<li><p>CSF</p>
-<ul>
-<li><p>Getting Started (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/getting-started/">link</a>)</p>
-<ul>
-<li><p>how to log in (INCLUDING from off campus)</p></li>
-<li><p>filesystem availability, usage and policy</p></li>
-<li><p>accessing software</p></li>
-<li><p>a 10 minute tutorial about batch (recommended, all work must be submitted to this)</p></li>
+<li><p>Getting started with GitHub Desktop: https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop</p></li>
+<li><p>Version control with Git: https://gcapes.github.io/git-course/ (~5 hrs)</p></li>
 </ul>
-</li>
-<li><p>Introduction to the CSF Course Materials (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/course/rcsf/">link</a>)</p></li>
+<p><strong>3. Markdown</strong></p>
+<ul class="simple">
+<li><p>Tutorial: https://www.markdowntutorial.com/</p></li>
+<li><p>For more information: https://zhonghuazheng.com/Environmental-Data-Science-Book/writing/wts/markdown-introduction.html</p></li>
 </ul>
-</li>
+<p><strong>4. LaTeX</strong></p>
+<ul class="simple">
+<li><p>Overleaf: https://www.overleaf.com/learn/latex/Tutorials</p></li>
+</ul>
+<p><strong>5. Python</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://aka.ms/LearnPython">Python for Beginners</a> [44 videos] by Microsoft</p></li>
 </ul>
 </section>
 </section>
@@ -134,8 +130,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../index.html" class="btn btn-neutral float-left" title="A Guideline of ENVDES Computing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="csf_tips.html" class="btn btn-neutral float-right" title="CSF Tips" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../computing_resources/helpful_tips.html" class="btn btn-neutral float-left" title="Helpful Tips" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="python.html" class="btn btn-neutral float-right" title="Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

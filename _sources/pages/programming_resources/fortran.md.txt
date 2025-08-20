@@ -2,11 +2,10 @@
 
 - Coding regularly is the only way to practise programming (e.g., doing projects). 
 - Try your best to learn through the interactive lessons if you are unable to code regularly.
-- At the very least, you should earn a certificate to demonstrate that you have invested time in learning Python.
 
 **Online Tutorials**
 
-- [fortran-lang](https://fortran-lang.org/en/learn/): learning resources for beginners and experts alike (including a Fortran Playground)
+- [fortran-lang](https://fortran-lang.org/learn/): learning resources for beginners and experts alike (including a Fortran Playground)
 - [coding club](https://ourcodingclub.github.io/tutorials/fortran-intro/): Introduction to Fortran
 - [Fortrain Wiki](https://fortranwiki.org/fortran/show/Tutorials): Tutorials on Fortran in general
 - [tutorialspoint](https://www.tutorialspoint.com/fortran/index.htm): This tutorial is designed for the readers who wish to learn the basics of Fortran.

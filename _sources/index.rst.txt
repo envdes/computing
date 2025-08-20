@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-A Guideline of MEDAL Computing
+A Guideline of ENVDES Computing
 ==============================
 
 .. toctree::
@@ -22,6 +22,7 @@ A Guideline of MEDAL Computing
    :maxdepth: 2
    :caption: Programming Resources
 
+   pages/programming_resources/overview.md
    pages/programming_resources/python.md
    pages/programming_resources/fortran.md
 
