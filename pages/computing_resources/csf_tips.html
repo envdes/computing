@@ -112,8 +112,8 @@ ssh<span class="w"> </span>username@10.99.203.52
 </pre></div>
 </div>
 <p><strong>Access to External Websites and Repositories from the CSF</strong> (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/software/tools/proxy/">link</a>)</p>
-<p>Before running git, use (interactive session)[https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/]:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>qrsh<span class="w"> </span>-l<span class="w"> </span>short
+<p>Before running git, use (interactive session)[https://ri.itservices.manchester.ac.uk/csf3/batch-slurm/srun/]:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>srun<span class="w"> </span>-p<span class="w"> </span>interactive<span class="w"> </span>-n<span class="w"> </span><span class="m">4</span><span class="w"> </span>-t<span class="w"> </span><span class="m">0</span>-1<span class="w"> </span>--pty<span class="w"> </span>bash
 </pre></div>
 </div>
 <p>You will then be able to clone from http(s) repositories. For example:</p>

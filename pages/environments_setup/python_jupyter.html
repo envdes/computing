@@ -115,7 +115,7 @@
 <h2>use Jupyter notebook on HPC with a GPU<a class="headerlink" href="#use-jupyter-notebook-on-hpc-with-a-gpu" title="Link to this heading"></a></h2>
 <p><strong>step 0: submit an interactive job</strong></p>
 <p>Here we use the compute node to intall the conda environment (<a class="reference external" href="https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/">ref</a>)</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>qrsh<span class="w"> </span>-l<span class="w"> </span>short
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>srun<span class="w"> </span>-p<span class="w"> </span>interactive<span class="w"> </span>-n<span class="w"> </span><span class="m">4</span><span class="w"> </span>-t<span class="w"> </span><span class="m">0</span>-1<span class="w"> </span>--pty<span class="w"> </span>bash
 </pre></div>
 </div>
 <p><strong>step 1: run the following script</strong></p>
