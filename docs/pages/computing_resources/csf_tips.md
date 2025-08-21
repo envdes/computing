@@ -22,10 +22,10 @@ ssh username@10.99.203.52
 
 **Access to External Websites and Repositories from the CSF** ([link](https://ri.itservices.manchester.ac.uk/csf3/software/tools/proxy/))
 
-Before running git, use (interactive session)[https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/]:
+Before running git, use (interactive session)[https://ri.itservices.manchester.ac.uk/csf3/batch-slurm/srun/]:
 
 ```bash
-qrsh -l short
+srun -p interactive -n 4 -t 0-1 --pty bash
 ```
 
 You will then be able to clone from http(s) repositories. For example:

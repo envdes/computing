@@ -21,7 +21,7 @@ If the "partmc" conda environment is not available, please follow the "**Conda I
 Here we use the compute node to intall the conda environment ([ref](https://ri.itservices.manchester.ac.uk/csf3/batch/qrsh/))
 
 ```bash
-$ qrsh -l short
+$ srun -p interactive -n 4 -t 0-1 --pty bash
 ```
 
 **step 1: run the following script**
